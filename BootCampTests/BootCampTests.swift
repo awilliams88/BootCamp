@@ -7,30 +7,34 @@
 //
 
 import XCTest
+import Foundation
 @testable import BootCamp
 
 class BootCampTests: XCTestCase {
     
+    var calendar: Calendar!
+    var dayComponent: DateComponents!
+    var testDate: Date!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        calendar = Calendar.current
+        dayComponent = DateComponents()
+        dayComponent.setValue(2, for: .day)
+        testDate = calendar.date(byAdding: dayComponent, to: Date())
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        calendar = nil
+        dayComponent = nil
+        testDate = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testThatSeventhNonWorkingDayIsWeekday() {
+        let seventhNonWorkingDay = Utility.dateForSeventhWorkingDay(after: testDate)
+        let dayOfWeek = calendar.component(.weekday, from: seventhNonWorkingDay)
+        XCTAssertFalse(dayOfWeek == 1 || dayOfWeek == 7, "Failed : Seventh Non Working Day Is Weekend")
     }
     
 }

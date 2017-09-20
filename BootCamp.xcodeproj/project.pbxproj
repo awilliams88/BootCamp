@@ -16,6 +16,8 @@
 		743138161F7241F000386153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743138141F7241F000386153 /* LaunchScreen.storyboard */; };
 		743138211F7241F000386153 /* BootCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743138201F7241F000386153 /* BootCampTests.swift */; };
 		7431382C1F7241F000386153 /* BootCampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431382B1F7241F000386153 /* BootCampUITests.swift */; };
+		7431383A1F724B3B00386153 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743138391F724B3B00386153 /* Utility.swift */; };
+		7431383B1F72560300386153 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743138391F724B3B00386153 /* Utility.swift */; };
 		C10B7A6249DCF4FA4FDACCD6 /* Pods_BootCampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95567BC8DEF9A4177EBA8DD2 /* Pods_BootCampTests.framework */; };
 		CD472108C56F2FD3F86A6003 /* Pods_BootCampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AECDF0DB215A99B891F773 /* Pods_BootCampUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,7 @@
 		743138271F7241F000386153 /* BootCampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootCampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7431382B1F7241F000386153 /* BootCampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCampUITests.swift; sourceTree = "<group>"; };
 		7431382D1F7241F000386153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743138391F724B3B00386153 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		79B1CD552C768F9720218790 /* Pods-BootCampUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootCampUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BootCampUITests/Pods-BootCampUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DCD097DF54C7C831695C15D /* Pods_BootCamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootCamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95567BC8DEF9A4177EBA8DD2 /* Pods_BootCampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootCampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,7 @@
 				743138141F7241F000386153 /* LaunchScreen.storyboard */,
 				743138171F7241F000386153 /* Info.plist */,
 				7431380F1F7241F000386153 /* BootCamp.xcdatamodeld */,
+				743138391F724B3B00386153 /* Utility.swift */,
 			);
 			path = BootCamp;
 			sourceTree = "<group>";
@@ -452,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7431383A1F724B3B00386153 /* Utility.swift in Sources */,
 				7431380B1F7241F000386153 /* ViewController.swift in Sources */,
 				743138111F7241F000386153 /* BootCamp.xcdatamodeld in Sources */,
 				743138091F7241F000386153 /* AppDelegate.swift in Sources */,
@@ -462,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7431383B1F72560300386153 /* Utility.swift in Sources */,
 				743138211F7241F000386153 /* BootCampTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
